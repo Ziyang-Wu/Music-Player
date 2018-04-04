@@ -1,0 +1,57 @@
+<html>
+<header>
+   <title>Music Player</title>
+   <link rel="stylesheet" type="text/css" href="ipod.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</header>
+<body>
+<div id="screen">
+      <div class="head-bar">
+        <a outline:none; href="songs.html"> 
+			<div class="back-button">
+				<i class="material-icons">arrow_back</i>	
+			</div>
+		</a>	
+	  </div>
+   <img src="images/currents.jpg" alt="Currents Album Cover" width="230px" height="230px" style="margin: 20px 35px 5px 35px"/>
+   <div>
+      <p id="songName" style="text-align: center; color: grey; font-weight: bold; line-height: 1px">The Less I Know The Better</p>
+      <p style="text-align: center; color: Tomato; font-size: small"><em>Currents</em> - Tame Impala</p>
+   </div>
+   <div style="text-align: center;">
+      <input type="range" id="rangeBar" value="0" min="0" max="180">
+   </div>
+   <div>
+      <div id="playerTime" style="padding-left: 30px;display: inline-block;font-size:x-small">0:00</div>
+      <div style="padding-left: 170px;display: inline-block;font-size:x-small">3:00</div>
+   </div>  
+  
+   <div style="text-align: center">
+      <button onclick="prevSong()"><div class="player-controls"><i class="material-icons">skip_previous</i></div></button>
+      <button onclick="switchPlay()""><div class="player-controls"><i id="toggle" class="material-icons">play_arrow</i></div></button>
+      <button onclick="nextSong()"><div class="player-controls"><i class="material-icons">skip_next</i></div></button>
+   </div>
+   <div class="volume-level"><i class="material-icons">volume_down</i></div>
+   <div class="volume-level">
+      <div id="vl0"></div>
+      <div id="vl1"></div>
+      <div id="vl2"></div>
+      <div id="vl3"></div>
+      <div id="vl4"></div>
+      <div id="vl5"></div>
+   </div>
+   <div style="text-align: center; line-height: 3px">
+      <button class="volume-rocker" onclick="volDown()">&mdash;</button>
+      <button class="volume-rocker" onclick="volUp()">+</button>
+   </div>
+  
+  
+   
+</div>
+<script src="ipod.js"></script>
+</body>
+</html>
+<!-- 
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->

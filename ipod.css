@@ -1,0 +1,194 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.head-bar {
+	width: 300px;
+	height: 45px;
+	background-color: Tomato;
+	color: white;
+	text-shadow: 3px 2px black;
+}
+
+.back-button {
+	border-color: Orange;
+	border-style: solid;
+	background-color: pink;
+	width: 50px; 
+	height: 25px; 
+	text-align: center;
+	margin:5px;
+}
+
+/* 
+	Albums 
+			*/
+/*.albums-album-wrapper {
+	
+}*/
+
+.albums-album-art {
+	margin: 20px 4px 20px 6px;
+	display: inline-block;
+	line-height: 8px;
+}
+
+.albums-album-name {
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.albums-artist-name {
+	text-align: center;
+	font-size: 13px;
+	font-style: italic;
+
+}
+
+/* 
+	Songs 
+			*/
+.songs-info-wrapper {
+	width: 100px;
+	height: 75px;
+	padding: 8px 15px 30px 10px;
+	margin: 0px 10px 30px 12px;
+	display: inline-block;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+/*.songs-album-art {
+
+}*/
+
+.songs-album-name {
+	font-weight: bold;
+	font-size: 22px;
+
+}
+
+.songs-artist-name {
+	font-size: 16px;
+	font-style: italic;
+
+}
+
+/*.songs-text-info {
+	
+}*/
+
+.songs-album-year {
+	font-size: 16px;
+	line-height: 40px;
+
+}
+
+.songs-list {
+	font-size: 16px;
+	line-height: 23px;
+	border-style: groove;
+	width: 246px;
+	margin-bottom: 3px;
+	padding-left: 2px;
+}
+
+/* 
+	Player 
+			*/
+.player-album-art {
+	
+}
+
+.player-song-info {
+	
+}
+/*
+#player-song-name {
+	
+}*/
+
+.volume-bar {
+	
+}
+
+.volume-level {
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.volume-rocker {
+	height: 20px;
+	width: 100px;
+	background-color: white;
+	border-radius: 6px;
+	margin-left: 20px;
+}
+/*restyle the slider thumb and track*/
+input[type=range]{
+	-webkit-appearance: none;
+	width: 240px;
+}
+
+input[type=range]:focus{
+	outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	height: 15px;
+	width: 15px;
+	margin-top: -5px;
+	background: white;
+	border-radius: 50%;
+	border: solid;
+	box-shadow: inset 1px blue;
+}
+
+input[type=range]::-webkit-slider-runnable-track{
+	height: 6px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px LightGray, inset 3px 3px 3px 3px Tomato;
+
+}
+
+.player-controls{
+	display: inline-block;
+	
+}
+
+#vl0,#vl1,#vl2,#vl3,#vl4,#vl5{
+	height: 6px;
+	width: 24px;
+	border: solid 1px;
+	margin-right: 3px;
+	margin-bottom: 7px;
+	display: inline-block;
+}
+
+/*
+#player-time {
+	
+}
+
+#time-elapsed {
+	
+}
+
+#time-total{
+	
+}*/
